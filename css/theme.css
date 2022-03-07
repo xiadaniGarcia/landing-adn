@@ -1158,10 +1158,13 @@ License URI:
     margin-right: 70px;
     border-radius: 3px;
     box-shadow: 0px 9px 35px 0px rgba(33, 37, 41, 0.15);
+    height: 100%;
+    width: 100%;
+    background-color: #081444;
 }
 .ab_images img{
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 3px;
 }
 .vp_btn{
@@ -2173,7 +2176,7 @@ License URI:
 }
 .case_slider_02_area{
     position: relative;
-    background: url(../images/bg/7.jpg) no-repeat center center / cover;
+    background: url(../images/computer1.jpeg) no-repeat center center / cover;
 }
 .case_02{
     position: relative;

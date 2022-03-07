@@ -27,6 +27,57 @@
         <!-- Favicon Icon -->
     </head>
     <body>
+    <!-- WhataApp -->
+
+    <div id="whatsApp"></div>
+    <script type="text/javascript">
+        $(function () {
+            $('#whatsApp').floatingWhatsApp({
+                phone: '5491133359850'
+            });
+        });
+    </script>
+
+
+    <!-- Messenger Plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "124061901071418");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v13.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="la-ball-scale-multiple la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
         <!-- Preloader Start -->
         <div class="preloader">
             <div class="la-ball-scale-multiple la-2x">
@@ -62,7 +113,7 @@
                                         <a href="#company">Nosotros</a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="#services">Servicios</a>
+                                        <a href="our_services.html">Servicios</a>
                                     </li>
                                     <li class="menu-item-has-children">
                                         <a href="#">Blog</a>
@@ -120,7 +171,7 @@
             <div class="rev_slider_wrapper">
                 <div id="rev_slider_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
                     <ul>
-                        <li data-index="rs-1" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Smart Solutions For Your Business" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <li data-index="rs-1" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                             <img src="images/car/table-2.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                             <div class="tp-caption tp-heading"
                                  data-x="['left']"
@@ -149,34 +200,6 @@
                                  data-paddingbottom="[0,0,0,0]"
                                  data-paddingleft="[0,0,0,25]"
                                  >Dimensión 360 Desarrollo de negocios</div>
-                            <div class="tp-caption tp-paragraph "
-                                 data-x="['left']"
-                                 data-hoffset="['0']"
-
-                                 data-y="['middle']"
-                                 data-voffset="['41px','41px','41px','-40']"
-
-                                 data-fontsize="['18','18','18','18']"
-                                 data-fontweight="300"
-                                 data-lineheight="['27','27','27','27']"
-                                 data-width="['430','430','430','100%']"
-                                 data-height="['auto']"
-                                 data-whitesapce="['normal']"
-                                 data-color="['#ced4da']"
-
-                                 data-type="text"
-                                 data-responsive_offset="on"
-
-                                 data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-
-                                 data-textAlign="['left']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[0,0,0,25]"
-                                 >We provide the best managing financial advice in the
-                                market and we are efficient in our services.</div>
                             <div class="tp-caption tp-buttons"
                                  data-x="['left']"
                                  data-hoffset="['0']"
@@ -203,9 +226,9 @@
                                  data-paddingright="[0,0,0,0]"
                                  data-paddingbottom="[0,0,0,0]"
                                  data-paddingleft="[0,0,0,25]"
-                                 ><a href="#" class="fnc_btn reverses"><span>Our Service<i class="bx bx-right-arrow-alt"></i></span></a><a href="#" class="fnc_btn fnc_light"><span>About Us<i class="bx bx-right-arrow-alt"></i></span></a></div>
+                                 ><a href="#" class="fnc_btn reverses"><span>Servicios<i class="bx bx-right-arrow-alt"></i></span></a><a href="#" class="fnc_btn fnc_light"><span>Nosotros<i class="bx bx-right-arrow-alt"></i></span></a></div>
                         </li>
-                        <li data-index="rs-2" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="The Best in Financial Investment Market" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <li data-index="rs-2" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                             <img src="images/car/design-10.jpeg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                             <div class="tp-caption tp-heading"
                                  data-x="['left']"
@@ -233,35 +256,7 @@
                                  data-paddingright="[0,0,0,0]"
                                  data-paddingbottom="[0,0,0,0]"
                                  data-paddingleft="[0,0,0,25]"
-                                 >The Best in Financial Investment Market</div>
-                            <div class="tp-caption tp-paragraph "
-                                 data-x="['left']"
-                                 data-hoffset="['0']"
-
-                                 data-y="['middle']"
-                                 data-voffset="['41px','41px','41px','-40']"
-
-                                 data-fontsize="['18','18','18','18']"
-                                 data-fontweight="300"
-                                 data-lineheight="['27','27','27','27']"
-                                 data-width="['430','400','400','100%']"
-                                 data-height="['auto']"
-                                 data-whitesapce="['normal']"
-                                 data-color="['#ced4da']"
-
-                                 data-type="text"
-                                 data-responsive_offset="on"
-
-                                 data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-
-                                 data-textAlign="['left']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[0,0,0,25]"
-                                 >We provide the best managing financial advice in the
-                                market and we are efficient in our services.</div>
+                                 >Finanzas, administración y planeación fiscal.</div>
                             <div class="tp-caption tp-buttons"
                                  data-x="['left']"
                                  data-hoffset="['0']"
@@ -288,9 +283,9 @@
                                  data-paddingright="[0,0,0,0]"
                                  data-paddingbottom="[0,0,0,0]"
                                  data-paddingleft="[0,0,0,25]"
-                                 ><a href="#" class="fnc_btn reverses"><span>Our Service<i class="bx bx-right-arrow-alt"></i></span></a><a href="#" class="fnc_btn fnc_light"><span>About Us<i class="bx bx-right-arrow-alt"></i></span></a></div>
+                                 ><a href="#" class="fnc_btn reverses"><span>Servicios<i class="bx bx-right-arrow-alt"></i></span></a><a href="#" class="fnc_btn fnc_light"><span>Saber más<i class="bx bx-right-arrow-alt"></i></span></a></div>
                         </li>
-                        <li data-index="rs-3" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Marketing Strategy Industry Analysis" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <li data-index="rs-3" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                             <img src="images/car/hire-2.jpeg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                             <div class="tp-caption tp-heading"
                                  data-x="['left']"
@@ -318,35 +313,7 @@
                                  data-paddingright="[0,0,0,0]"
                                  data-paddingbottom="[0,0,0,0]"
                                  data-paddingleft="[0,0,0,25]"
-                                 >Marketing Strategy Industry Analysis</div>
-                            <div class="tp-caption tp-paragraph "
-                                 data-x="['left']"
-                                 data-hoffset="['0']"
-
-                                 data-y="['middle']"
-                                 data-voffset="['41px','41px','41px','-40px']"
-
-                                 data-fontsize="['18','18','18','18']"
-                                 data-fontweight="300"
-                                 data-lineheight="['27','27','27','27']"
-                                 data-width="['430','400','400','100%']"
-                                 data-height="['auto']"
-                                 data-whitesapce="['normal']"
-                                 data-color="['#ced4da']"
-
-                                 data-type="text"
-                                 data-responsive_offset="on"
-
-                                 data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-
-                                 data-textAlign="['left']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[0,0,0,25]"
-                                 >We provide the best managing financial advice in the
-                                market and we are efficient in our services.</div>
+                                 >Identidad corporativa, impresos y promocionales.</div>
                             <div class="tp-caption tp-buttons"
                                  data-x="['left']"
                                  data-hoffset="['0']"
@@ -373,7 +340,7 @@
                                  data-paddingright="[0,0,0,0]"
                                  data-paddingbottom="[0,0,0,0]"
                                  data-paddingleft="[0,0,0,25]"
-                                 ><a href="#" class="fnc_btn reverses"><span>Our Service<i class="bx bx-right-arrow-alt"></i></span></a><a href="#" class="fnc_btn fnc_light"><span>About Us<i class="bx bx-right-arrow-alt"></i></span></a></div>
+                                 ><a href="#" class="fnc_btn reverses"><span>Servicios<i class="bx bx-right-arrow-alt"></i></span></a><a href="#" class="fnc_btn fnc_light"><span>Saber más<i class="bx bx-right-arrow-alt"></i></span></a></div>
                         </li>
                     </ul>
                 </div>
@@ -386,9 +353,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-6">
-                        <div class="ab_images">
-                            <img src="images/home_01/1.jpg" alt=""/>
-                            <a data-rel="lightcase" href="https://player.vimeo.com/video/337292310" class="vp_btn light_pops">Play<span><i class="bx bx-play"></i></span></a>
+                        <div style="text-align: center;" class="ab_images">
+                            <img style="text-align: center;" src="images/logo-white.png" alt=""/>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6 noPaddingRight">
@@ -397,16 +363,16 @@
                                 ¿Quiénes somos?
 
                             </h2>
-                            <div class="dvd_bar"></div>
-                            <p>
+                            <p style="text-align: justify;">
                                 Con la suma de talentos y más de 22 años de experiencia nace Dimensión 360. Dedicados a la innovación y la transformación de las empresas, mejorando su productividad, rentabilidad y cultura organizacional.
                                 Nuestro logo en su forma ascendente es creativo e inspirador, transforma, evoluciona e impulsa a la mejora continua, es aspiracional.
                             </p>
-                            <p>
+                            <p style="text-align: justify;">
                                 De forma descendente es analítico, va de lo general a lo particular, simboliza el ciclo comercial de ventas, mejora las decisiones, busca la causa raíz y motiva al cambio.
-                                Nuestro lema:
-                                “Hazlo con pasión, haz que las cosas sucedan”.
                             </p>
+                            <div>Nuestro lema:
+                                <span style="font-style: italic;">“Hazlo con pasión, haz que las cosas sucedan”.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -414,41 +380,109 @@
         </section>
         <!-- About US Section End -->
 
-        <!-- Fact Section Start -->
-        <section class="fact_section">
+        <!-- Objetivo Section Start -->
+        <section id="company" class="about_us_section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="hr_row"></div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="fact_01 text-center">
-                            <h2 class="counters" data-count="1245">1245</h2>
-                            <h5>Coffee Cups</h5>
+                    <div class="col-md-12 col-lg-6 noPaddingRight">
+                        <div class="ab_content">
+                            <h2>
+                                Objetivo
+
+                            </h2>
+                            <p style="text-align: justify;">
+                                Ofrecer a través de nuestros servicios, soluciones y herramientas que mejoren sus resultados 
+                                y procesos, facilitando la forma de hacer las cosas. 
+                            </p>
+                            <p style="text-align: justify;">
+                                Nuestro valor agregado es crear experiencia y relaciones de largo plazo,
+                                ofreciendo servicios innovadores que motiven a todos sus colaboradores 
+                                y equipos de trabajo a formar una nueva cultura de trabajo. 
+                                Nuestro plus, fomentar una imagen y sentido de pertenencia con nuestro 
+                                servicio especializado de personalización que promueve el arraigo 
+                                de sus colaboradores. 
+
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="fact_01 text-center">
-                            <h2 class="counters" data-count="6524">6524</h2>
-                            <h5>Satisfied Clients</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="fact_01 text-center">
-                            <h2 class="counters" data-count="8248">8248</h2>
-                            <h5>Finished Projects</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="fact_01 text-center">
-                            <h2 class="counters" data-count="9731">9731</h2>
-                            <h5>Worked Hours</h5>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="ab_images">
+                            <img src="images/cooperate1.jpeg" alt=""/>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Fact Section End -->
+        <!-- Objetivo Section End -->
+
+         <!-- Adn -->
+         <section class="case_section_02">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 text-left">
+                        <h2 class="sec_title">Nuestro <span style="color: #112ea3;">ADN</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 noPadding">
+                        <div class="case_slider_02_area">
+                            <div class="case_slider_02 owl-carousel">
+                                <div class="case_02">
+                                    <div class="c02_det">
+                                        <h2><a href="#">Misión</a></h2>
+                                        <p style="text-align: justify;">
+                                            Crear valor agregado y visión estratégica para todos 
+                                            nuestros colaboradores, clientes y socios comerciales 
+                                            a través de nuestras 7 opciones de servicios.
+
+                                        </p>
+                                        </br>
+                                    </div>
+                                </div>
+                                <div class="case_02">
+                                    <div class="c02_det">
+                                        <h2><a href="#">Visión</a></h2>
+                                        <p style="text-align: justify;"> 
+                                            Ofrecer servicios diferenciados en consultoría 
+                                            siendo reconocidos  por la experiencia de mejores prácticas, 
+                                            resultados y el valor agregado entregado a nuestros clientes 
+                                            y socios comerciales.
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="case_02">
+                                    <div class="c02_det">
+                                        <h2><a href="#">Valores</a></h2>
+                                        <p style="text-align: justify;">
+                                            Lealtad, Honestidad, Respeto, Liderazgo, Compromiso, 
+                                            Responsabilidad, Humildad.
+
+                                        </p>
+                                        </br></br></br>
+                                    </div>
+                                </div>
+                                <div class="case_02">
+                                    <div class="c02_det">
+                                        <h2><a href="#">Competencias</a></h2>
+                                        <p style="text-align: justify;">
+                                            Trabajo en equipo, Asertividad, Desarrollo de líderes, 
+                                            Organización y Planificación, Orientación al Cliente, 
+                                            Ejecución y Sentido de urgencia.
+
+                                        </p>
+                                        </br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Adn End -->
 
         <!-- Service Section Start -->
         <section class="service_section">
@@ -559,8 +593,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h5 class="sub_title lights">Get a Quote</h5>
-                        <h2 class="sec_title lights">Request a Free Quote Today</h2>
+                        <h2 class="sec_title lights">Contacto</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -569,466 +602,42 @@
                             <form method="post" action="#">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-6">
-                                        <input type="text" name="q_fname" placeholder="First Name *"/>
+                                        <input type="text" name="q_fname" placeholder="Nombre *"/>
                                     </div>
                                     <div class="col-md-6 col-lg-6">
-                                        <input type="text" name="q_lname" placeholder="Last Name *"/>
+                                        <input type="text" name="q_lname" placeholder="Apellidos *"/>
                                     </div>
                                     <div class="col-md-6 col-lg-6">
-                                        <input type="email" name="q_email" placeholder="Your Email *"/>
+                                        <input type="email" name="q_email" placeholder="Email *"/>
                                     </div>
                                     <div class="col-md-6 col-lg-6">
-                                        <input type="text" name="q_phone" placeholder="Your Phone *"/>
+                                        <input type="text" name="q_phone" placeholder="Teléfono *"/>
                                     </div>
                                     <div class="col-md-6 col-lg-6">
                                         <select name="q_type">
-                                            <option value="">I Would Like to Discuss</option>
-                                            <option value="1">It's About Mutual Fund Investment</option>
-                                            <option value="2">Bank Loan Interest</option>
+                                            <option value="">¿Qué servicio me interesa?</option>
+                                            <option value="1">Operación y comercialización.</option>
+                                            <option value="2">Finanzas, administración y planeación fiscal.</option>
+                                            <option value="3">Capital humano y desarrollo organizacional.</option>
+                                            <option value="4">Atracción de talento (Headhunting).</option>
+                                            <option value="5">Control interno, procesos, medición del riesgo y método COSO.</option>
+                                            <option value="6">Consejero independiente y gobierno corporativo.</option>
+                                            <option value="7">Identidad corporativa, impresos y promocionales.</option>
+                                            <option value="8">Otro.</option>
+
                                         </select>
                                     </div>
                                     <div class="col-md-6 col-lg-6">
-                                        <button type="submit" name="q_submit"><span>Request a Quote<i class="bx bx-right-arrow-alt"></i></span></button>
-                                        <div class="form_note text-right">
-                                            Join Now! With <span>50% Discount</span>
-                                        </div>
+                                        <button type="submit" name="q_submit"><span>Enviar<i class="bx bx-right-arrow-alt"></i></span></button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h5 class="client_notes text-center">Trusted by the world’s most innovative businesses – big and small</h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="client_slider owl-carousel">
-                            <div class="cs_item">
-                                <a href="#">
-                                    <img src="images/clients/1.png" alt=""/>
-                                </a>
-                            </div>
-                            <div class="cs_item">
-                                <a href="#">
-                                    <img src="images/clients/2.png" alt=""/>
-                                </a>
-                            </div>
-                            <div class="cs_item">
-                                <a href="#">
-                                    <img src="images/clients/3.png" alt=""/>
-                                </a>
-                            </div>
-                            <div class="cs_item">
-                                <a href="#">
-                                    <img src="images/clients/4.png" alt=""/>
-                                </a>
-                            </div>
-                            <div class="cs_item">
-                                <a href="#">
-                                    <img src="images/clients/5.png" alt=""/>
-                                </a>
-                            </div>
-                            <div class="cs_item">
-                                <a href="#">
-                                    <img src="images/clients/6.png" alt=""/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <!-- Quote Section End -->
-
-        <!-- Case Section Start -->
-        <section class="case_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 text-left">
-                        <h5 class="sub_title no_bars">Our Projects</h5>
-                        <h2 class="sec_title">Case Studies</h2>
-                        <div class="dvd_bar"></div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="case_slider_01_nav">
-                            <button type="button" class="case_navigation case_prev"><i class="bx bx-left-arrow-alt"></i></button>
-                            <button type="button" class="case_navigation case_next"><i class="bx bx-right-arrow-alt"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 noPadding">
-                        <div class="case_slider_01 owl-carousel">
-                            <div class="case_01">
-                                <img src="images/case/1.jpg" alt=""/>
-                                <div class="c01_cats">
-                                    <a href="#">Finance</a>, <a href="#">Leasing</a>
-                                </div>
-                                <div class="c01_det">
-                                    <h2><a href="single_case_studies.html">Business Development</a></h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                    <a href="single_case_studies.html" class="learn_more_lnk">Read More</a>
-                                </div>
-                            </div>
-                            <div class="case_01">
-                                <img src="images/case/2.jpg" alt=""/>
-                                <div class="c01_cats">
-                                    <a href="#">Business</a>, <a href="#">Leasing</a>
-                                </div>
-                                <div class="c01_det">
-                                    <h2><a href="single_case_studies.html">Banking Consulting</a></h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                    <a href="single_case_studies.html" class="learn_more_lnk">Read More</a>
-                                </div>
-                            </div>
-                            <div class="case_01">
-                                <img src="images/case/3.jpg" alt=""/>
-                                <div class="c01_cats">
-                                    <a href="single_case_studies.html">Business</a>, <a href="#">Investing</a>
-                                </div>
-                                <div class="c01_det">
-                                    <h2><a href="single_case_studies.html">Merger & Acquisition</a></h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                    <a href="#" class="learn_more_lnk">Read More</a>
-                                </div>
-                            </div>
-                            <div class="case_01">
-                                <img src="images/case/4.jpg" alt="">
-                                <div class="c01_cats">
-                                    <a href="#">Business</a>, <a href="#">Service</a>
-                                </div>
-                                <div class="c01_det">
-                                    <h2><a href="single_case_studies.html">Surface Logistics</a></h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                    <a href="single_case_studies.html" class="learn_more_lnk">Read More</a>
-                                </div>
-                            </div>
-                            <div class="case_01">
-                                <img src="images/case/5.jpg" alt="">
-                                <div class="c01_cats">
-                                    <a href="#">Loans</a>, <a href="#">Finance</a>
-                                </div>
-                                <div class="c01_det">
-                                    <h2><a href="single_case_studies.html">Consumer Products</a></h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                    <a href="single_case_studies.html" class="learn_more_lnk">Read More</a>
-                                </div>
-                            </div>
-                            <div class="case_01">
-                                <img src="images/case/6.jpg" alt="">
-                                <div class="c01_cats">
-                                    <a href="#">Leasing</a>, <a href="#">Service</a>
-                                </div>
-                                <div class="c01_det">
-                                    <h2><a href="single_case_studies.html">Energy &amp; Environment</a></h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                    <a href="single_case_studies.html" class="learn_more_lnk">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="notes">
-                            We have many projects managed by our great team <a href="#"><span>Explore Our Projects</span><i class="bx bx-right-arrow-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Case Section End -->
-
-        <!-- Testimonial Section Start -->
-        <section class="testimonial_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h5 class="sub_title">Testimonials</h5>
-                        <h2 class="sec_title">What Clients Say About Us</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 noPadding">
-                        <div class="testimonial_slider_01 owl-carousel">
-                            <div class="testimonial_01 text-center">
-                                <div class="t01_head">
-                                    <img src="images/testimonial/1.jpg" alt=""/>
-                                    <h3>Mark Smith</h3>
-                                    <p>Envato Inc.</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="t01_rate">
-                                    <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
-                                </div>
-                            </div>
-                            <div class="testimonial_01 text-center">
-                                <div class="t01_head">
-                                    <img src="images/testimonial/2.jpg" alt=""/>
-                                    <h3>Vera Duncan</h3>
-                                    <p>PayPal Inc.</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="t01_rate">
-                                    <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
-                                </div>
-                            </div>
-                            <div class="testimonial_01 text-center">
-                                <div class="t01_head">
-                                    <img src="images/testimonial/3.jpg" alt=""/>
-                                    <h3>Bryce Vaughn</h3>
-                                    <p>Google Inc.</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="t01_rate">
-                                    <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
-                                </div>
-                            </div>
-                            <div class="testimonial_01 text-center">
-                                <div class="t01_head">
-                                    <img src="images/testimonial/4.jpg" alt=""/>
-                                    <h3>Cooper Moore</h3>
-                                    <p>Payoneer Inc.</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="t01_rate">
-                                    <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
-                                </div>
-                            </div>
-                            <div class="testimonial_01 text-center">
-                                <div class="t01_head">
-                                    <img src="images/testimonial/5.jpg" alt=""/>
-                                    <h3>Dan Boyle</h3>
-                                    <p>Codecanyon Inc.</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="t01_rate">
-                                    <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
-                                </div>
-                            </div>
-                            <div class="testimonial_01 text-center">
-                                <div class="t01_head">
-                                    <img src="images/testimonial/6.jpg" alt=""/>
-                                    <h3>Arnaldo Kozey</h3>
-                                    <p>Behance Inc.</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="t01_rate">
-                                    <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
-                                </div>
-                            </div>
-                            <div class="testimonial_01 text-center">
-                                <div class="t01_head">
-                                    <img src="images/testimonial/7.jpg" alt=""/>
-                                    <h3>Mike Hardson</h3>
-                                    <p>Kopalpora Inc.</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="t01_rate">
-                                    <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
-                                </div>
-                            </div>
-                            <div class="testimonial_01 text-center">
-                                <div class="t01_head">
-                                    <img src="images/testimonial/8.jpg" alt=""/>
-                                    <h3>Fae Hoppe</h3>
-                                    <p>Kamla Inc.</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="t01_rate">
-                                    <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
-                                </div>
-                            </div>
-                            <div class="testimonial_01 text-center">
-                                <div class="t01_head">
-                                    <img src="images/testimonial/9.jpg" alt=""/>
-                                    <h3>Kalia Fince</h3>
-                                    <p>Master Inc.</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="t01_rate">
-                                    <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonial Section End -->
-
-        <!-- Pricing Section Start -->
-        <section class="pricing_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h5 class="sub_title lights">Pricing Tables</h5>
-                        <h2 class="sec_title lights">No Hidden Charges</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pricing_01 text-center">
-                            <div class="p01_head">
-                                <h2>Free</h2>
-                                <h5>Basic</h5>
-                            </div>
-                            <div class="p01_body">
-                                <ul>
-                                    <li>CRM Auto-Sync</li>
-                                    <li>Click-To-Call Back </li>
-                                    <li class="disable">Track Energy Costs</li>
-                                    <li class="disable">Predictive Dialing</li>
-                                </ul>
-                            </div>
-                            <div class="p01_footer">
-                                <a href="#"><span>Get Started<i class="bx bx-right-arrow-alt"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pricing_01 text-center active">
-                            <div class="p01_head">
-                                <h2><sup class="signs">$</sup>9<sub class="period">/mo</sub></h2>
-                                <h5>Start Up</h5>
-                                <div class="active_label">Best Choice</div>
-                            </div>
-                            <div class="p01_body">
-                                <ul>
-                                    <li>CRM Auto-Sync</li>
-                                    <li>Click-To-Call Back </li>
-                                    <li>Track Energy Costs</li>
-                                    <li class="disable">Predictive Dialing</li>
-                                </ul>
-                            </div>
-                            <div class="p01_footer">
-                                <a href="#"><span>Get Started<i class="bx bx-right-arrow-alt"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pricing_01 text-center">
-                            <div class="p01_head">
-                                <h2><sup class="signs">$</sup>19<sub class="period">/mo</sub></h2>
-                                <h5>Corporate</h5>
-                            </div>
-                            <div class="p01_body">
-                                <ul>
-                                    <li>CRM Auto-Sync</li>
-                                    <li>Click-To-Call Back </li>
-                                    <li>Track Energy Costs</li>
-                                    <li>Predictive Dialing</li>
-                                </ul>
-                            </div>
-                            <div class="p01_footer">
-                                <a href="#"><span>Geg Started<i class="bx bx-right-arrow-alt"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="notes">
-                            Need a custom solutions for your organization <a href="#"><span>Contact Us Here</span><i class="bx bx-right-arrow-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Pricing Section End -->
-
-        <!-- Blog Section Start -->
-        <section class="blog_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h5 class="sub_title">Our Blog</h5>
-                        <h2 class="sec_title">Our Latest News</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="blog_01">
-                            <div class="b01_thumb">
-                                <img src="images/blog/1.jpg" alt=""/>
-                            </div>
-                            <div class="b01_det">
-                                <div class="b01_meta">
-                                    <span><i class="bx bxs-time-five"></i><a href="#">Jan 16, 2020</a></span>
-                                    <span class="b01m_com"><i class="bx bxs-comment-dots"></i><a href="#">3 Comments</a></span>
-                                </div>
-                                <h3><a href="single_blog_post.html">Why Need To Use Financial Consulting Service?</a></h3>
-                                <a href="single_blog_post.html" class="learn_more_lnk">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="blog_01">
-                            <div class="b01_thumb">
-                                <img src="images/blog/2.jpg" alt=""/>
-                            </div>
-                            <div class="b01_det">
-                                <div class="b01_meta">
-                                    <span><i class="bx bxs-time-five"></i><a href="#">Oct 14, 2020</a></span>
-                                    <span class="b01m_com"><i class="bx bxs-comment-dots"></i><a href="#">2 Comments</a></span>
-                                </div>
-                                <h3><a href="single_blog_post.html">The Key to Efficient Loan Origination</a></h3>
-                                <a href="single_blog_post.html" class="learn_more_lnk">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="blog_01">
-                            <div class="b01_thumb">
-                                <img src="images/blog/3.jpg" alt=""/>
-                            </div>
-                            <div class="b01_det">
-                                <div class="b01_meta">
-                                    <span><i class="bx bxs-time-five"></i><a href="#">Aug 11, 2020</a></span>
-                                    <span class="b01m_com"><i class="bx bxs-comment-dots"></i><a href="#">4 Comments</a></span>
-                                </div>
-                                <h3><a href="single_blog_post.html">Can Your Business Grow With Our New Technology?</a></h3>
-                                <a href="single_blog_post.html" class="learn_more_lnk">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Blog Section End -->
 
         <!-- CTA Section Start -->
         <section class="cta_section">
@@ -1166,5 +775,10 @@
         <!-- Rev slider Add on End -->
 
         <script src="js/theme.js"></script>
+
+        <!-- WhatsApp button --->
+        <script type="text/javascript" src="js/floating-wpp.min.js"></script>
+        <link rel="stylesheet" href="js/floating-wpp.min.css">
+        <script type="text/javascript" src="js/services.js"></script>
     </body>
 </html>
