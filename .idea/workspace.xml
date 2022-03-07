@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85168796-d558-42f7-94a2-056f0b88235c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/js/floating-wpp.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/floating-wpp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/our_services.html" beforeDir="false" afterPath="$PROJECT_DIR$/our_services.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,11 +47,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646621331027</updated>
-      <workItem from="1646621332501" duration="3428000" />
+      <workItem from="1646621332501" duration="4697000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
