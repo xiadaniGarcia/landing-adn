@@ -11,10 +11,64 @@ collections:
   - label: Services
     name: services
     files:
-      - label: General
-        name: general
+      - label: Operación y comercialización
+        name: operation
         format: json
         file: 'content/services/operation.json'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Description', name: description, widget: markdown }
+          - { label: Image, name: image, widget: image }
+          - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
+      - label: Finanzas, administración y planeación fiscal
+        name: finance
+        format: json
+        file: 'content/services/finance.json'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Description', name: description, widget: markdown }
+          - { label: Image, name: image, widget: image }
+          - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
+      - label: Capital humano y desarrollo organizacional
+        name: capital
+        format: json
+        file: 'content/services/capital.json'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Description', name: description, widget: markdown }
+          - { label: Image, name: image, widget: image }
+          - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
+      - label: Headhunting
+        name: headhunting
+        format: json
+        file: 'content/services/headhunting.json'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Description', name: description, widget: markdown }
+          - { label: Image, name: image, widget: image }
+          - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
+      - label: Control interno, procesos, medición del riesgo y método COSO.
+        name: control
+        format: json
+        file: 'content/services/control.json'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Description', name: description, widget: markdown }
+          - { label: Image, name: image, widget: image }
+          - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
+      - label: Consejero independiente y gobierno corporativo.
+        name: government
+        format: json
+        file: 'content/services/government.json'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Description', name: description, widget: markdown }
+          - { label: Image, name: image, widget: image }
+          - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
+      - label: Identidad corporativa, impresos y promocionales
+        name: identity
+        format: json
+        file: 'content/services/identity.json'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: 'Description', name: description, widget: markdown }
