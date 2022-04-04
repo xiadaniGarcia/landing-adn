@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Financeya - Consulting, Finance & Accounting HTML Template</title>
+        <title>Dimensión 360</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -28,6 +28,48 @@
         <!-- Favicon Icon -->
     </head>
     <body>
+    <!-- WhataApp -->
+
+    <div id="whatsApp"></div>
+    <script type="text/javascript">
+        $(function () {
+            $('#whatsApp').floatingWhatsApp({
+                phone: '5491133359850'
+            });
+        });
+    </script>
+
+
+    <!-- Messenger Plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "111649861403678");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v13.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
         <!-- Preloader Start -->
         <div class="preloader">
             <div class="la-ball-scale-multiple la-2x">
@@ -37,49 +79,16 @@
             </div>
         </div>
         <!-- Preloader Start -->
-        
-        <!-- Top Bar Start -->
-        <section class="top_bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-lg-3 col-xl-2">
-                        <div class="info_item">
-                            <i class="bx bx-support"></i>
-                            <h5>Free Call:</h5>
-                            <h6 class="active">+00 123 456 789</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-2">
-                        <div class="info_item">
-                            <i class="bx bx-at"></i>
-                            <h5>Email Us:</h5>
-                            <h6><a href="#">Mail@Example.com</a></h6>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-2 noPaddingRight">
-                        <div class="info_item">
-                            <i class="bx bxs-map"></i>
-                            <h5>Visit Us:</h5>
-                            <h6>7 King Street, London</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-6">
-                        <div class="bar_btns">
-                            <a href="#request_quote_section" class="req_btn scroll_to_btn"><span>Request a Quote</span><i class="bx bx-right-arrow-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Top Bar End -->
 
-        <!-- Header 01 Start -->
+    <!-- Header 01 Start -->
+    <section id="home" class="top_bar">
         <header class="header_01 isSticky">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-lg-3">
                         <div class="logo_01">
                             <a href="index.html">
+                                <img src="images/logo.png"/>
                             </a>
                         </div>
                     </div>
@@ -91,111 +100,24 @@
                             <ul>
                                 <li class="current-menu-item menu-item-has-children">
                                     <a href="index.html">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html">Mulitpage 01</a></li>
-                                        <li><a href="index2.html">Multipage 02</a></li>
-                                        <li><a href="index3.html">Multipage 03</a></li>
-                                        <li><a href="index4.html">Onepage Version</a></li>
-                                    </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="#">Company</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="about_us.html">About Us</a></li>
-                                        <li><a href="why_choose_us.html">Why Choose Us</a></li>
-                                        <li><a href="meet_our_advisor.html">Meet Our Advisor</a></li>
-                                        <li><a href="award_and_recognition.html">Award & Recognition</a></li>
-                                        <li><a href="pricing_table.html">Pricing Table</a></li>
-                                        <li><a href="help_and_faqs.html">Help & FAQs</a></li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Utility Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="coming_soon.html">Coming Soon</a></li>
-                                                <li><a href="maintenance.html">Maintenance Page</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                    <a href="index.html#company">Nosotros</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="#">Case</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="case_studies.html">Case Studies One</a></li>
-                                        <li><a href="case_studies2.html">Case Studies Two</a></li>
-                                        <li><a href="single_case_studies.html">Single Case Study</a></li>
-                                    </ul>
+                                    <a href="our_services.html">Servicios</a>
                                 </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Service</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="our_services.html">Our Services One</a></li>
-                                        <li><a href="our_services2.html">Our Services Two</a></li>
-                                        <li><a href="our_services3.html">Our Services Three</a></li>
-                                        <li><a href="single_service.html">Single Service</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">News</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog_standard.html">Blog Standard</a></li>
-                                        <li><a href="blog_grid.html">Blog Grid</a></li>
-                                        <li><a href="single_blog_post.html">Blog Single Post</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Shop</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="shop_product.html">Shop Products</a></li>
-                                        <li><a href="shop_product_left_sidebar.html">Products Left Bar</a></li>
-                                        <li><a href="shop_product_right_sidebar.html">Products Right Bar</a></li>
-                                        <li><a href="single_shop_product.html">Single Product</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact_us.html">Contact Us</a></li>
+                                <li><a href="blog_standard.html">Blog</a></li>
+                                <li><a href="index.html#contact">Contacto</a></li>
                             </ul>
-                            <div class="access_btns">
-                                <a href="#" class="src_btn"><i class="bx bx-search"></i></a>
-                                <div class="cart_btn">
-                                    <a href="#"><i class="bx bx-shopping-bag"></i><span>3</span></a>
-                                    <div class="mini_cart">
-                                        <div class="mc_item">
-                                            <img src="images/cart/1.jpg" alt=""/>
-                                            <h4><a href="#">The Wisdom of Finance</a></h4>
-                                            <div class="product_price clearfix">
-                                                <span class="price"><span><span>$</span>19.00</span></span>
-                                            </div>
-                                            <a href="#" class="remove_cart"></a>
-                                        </div>
-                                        <div class="mc_item">
-                                            <img src="images/cart/2.jpg" alt=""/>
-                                            <h4><a href="#">Wealth Hacking Secrets</a></h4>
-                                            <div class="product_price clearfix">
-                                                <span class="price"><span><span>$</span>41.00</span></span>
-                                            </div>
-                                            <a href="#" class="remove_cart"></a>
-                                        </div>
-                                        <div class="mc_item">
-                                            <img src="images/cart/3.jpg" alt=""/>
-                                            <h4><a href="#">Health Care Finance</a></h4>
-                                            <div class="product_price clearfix">
-                                                <span class="price"><span><span>$</span>52.00</span></span>
-                                            </div>
-                                            <a href="#" class="remove_cart"></a>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="total_price">Subtotal: <span class="price"><span><span>$</span>112.00</span></span></div>
-                                        <div class="cart_buttons clearfix">
-                                            <a href="#">Checkout</a>
-                                            <a href="#">View Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </nav>
                     </div>
+
+
                 </div>
             </div>
         </header>
+    </section>
         <div class="blanks"></div>
         <!-- Header 01 End -->
 
@@ -523,5 +445,10 @@
         <!-- Rev slider Add on End -->
 
         <script src="js/theme.js"></script>
+
+        <!-- WhatsApp button --->
+        <script type="text/javascript" src="js/floating-wpp.min.js"></script>
+        <link rel="stylesheet" href="js/floating-wpp.min.css">
+        <script type="text/javascript" src="js/services.js"></script>
     </body>
 </html>
