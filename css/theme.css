@@ -1212,6 +1212,9 @@ License URI:
     position: relative;
     padding-top: 23px;
 }
+.ab_content p{
+    font-size: large;
+}
 .dvd_bar{
     position: relative;
     height: 4px;
@@ -1514,14 +1517,13 @@ License URI:
     top: 0;
     bottom: 0;
     margin: auto 0;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border: 1px solid #e9ecef;
     background: #FFF;
     color: #212529;
     text-align: center;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 40px;
     text-align: center;
     border-radius: 2px;
     box-shadow: 0px 9px 35px 0px rgba(33, 37, 41, 0.1);
