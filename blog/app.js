@@ -3,12 +3,11 @@ var myMod = angular.module("myMod", []);
 myMod.controller("operation", function ($scope, $http) {
     $scope.thing = "hi";
 
-    $http.get("test.json")
+    $http.get("../content/services/operation.json")
         .success(function (data) {
-            $scope.publishedAt = data.publishedAt;
             $scope.title = data.title;
-            $scope.content = data.content;
-            $scope.image = data.featuredImage;
+            $scope.description = data.description;
+            $scope.image = data.image;
             $scope.seo = data.seoDescription;
 
 
