@@ -36,6 +36,14 @@
             gtag('config', 'G-G3X8WM8DED');
         </script>
 
+        <!-- Netlify Config-->
+        <!-- Include the script that enables Netlify Identity on this page. -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/netlify-identity-widget@1/build/netlify-identity-widget.min.js"
+        async
+        defer
+        ></script>
+
     </head>
     <body>
     <!-- WhataApp -->
@@ -725,5 +733,18 @@
         <link rel="stylesheet" href="js/floating-wpp.min.css">
         <script src="js/query.serialize-object.min.js"></script>
         <script type="text/javascript" src="js/services.js"></script>
+
+        <!-- Netlify Config-->
+        <script>
+            if (window.netlifyIdentity) {
+              window.netlifyIdentity.on('init', (user) => {
+                if (!user) {
+                  window.netlifyIdentity.on('login', () => {
+                    document.location.href = '/admin/';
+                  });
+                }
+              });
+            }
+        </script>
     </body>
 </html>
