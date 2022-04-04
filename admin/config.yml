@@ -8,12 +8,28 @@ media_folder: 'media' # Folder where user uploaded files should go
 publish_mode: editorial_workflow
 
 collections:
-  - name: 'Post' # Used in routes, e.g., /admin/collections/blog
-    label: 'Post' # Used in the UI
-    folder: '/' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
-      - {label: 'Body', name: 'body', widget: 'markdown'}
+  - label: Services
+    name: services
+    files:
+      - label: General
+        name: general
+        format: json
+        file: 'content/services/operation.json'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Description', name: description, widget: markdown }
+          - { label: Image, name: image, widget: image }
+          - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/blog'
+    create: true
+    slug: '{{slug}}'
+    format: 'json'
+    sort: 'published_at:desc'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: 'Published At', name: publishedAt, widget: date, format: 'Do MMM YYYY' }
+      - { label: Content, name: content, widget: markdown }
+      - { label: 'Featured Image', name: featuredImage, widget: image, required: false }
+      - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
