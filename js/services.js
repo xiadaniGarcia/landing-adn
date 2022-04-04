@@ -1,5 +1,5 @@
 $('#whatsApp').floatingWhatsApp({
-    phone: '+5213324955112',
+    phone: '+5213312886652',
     popupMessage: 'Hola, ¿Cómo te puedo ayudar?',
     showPopup: true
 });
