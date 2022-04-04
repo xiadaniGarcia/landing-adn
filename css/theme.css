@@ -1212,6 +1212,9 @@ License URI:
     position: relative;
     padding-top: 23px;
 }
+.ab_content p{
+    font-size: large;
+}
 .dvd_bar{
     position: relative;
     height: 4px;
