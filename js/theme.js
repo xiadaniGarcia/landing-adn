@@ -58,7 +58,10 @@ License URI:
     --------------------------------------------------------------------------*/
     if(service_01_slider.length > 0){
         service_01_slider.owlCarousel({
-            loop: false,
+            loop: true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplaySpeed: 10000,
             margin: 0,
             responsiveClass: true,
             nav: true,
