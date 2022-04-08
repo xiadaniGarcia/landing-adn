@@ -1,3 +1,23 @@
-.page_banner.bg_20{
+.page_banner.bg_20 {
     background: url(../images/services/services.jpeg) no-repeat center center / cover;
+}
+
+#company {
+    background-color: #091444;
+}
+
+#somos {
+    color: white;
+}
+
+#somos_1 {
+    color: aliceblue
+}
+
+.footer{
+    color: white!important;
+}
+
+.text-area{
+    height: 7rem!important;
 }

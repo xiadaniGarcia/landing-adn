@@ -1,750 +1,804 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Dimensión 360</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Dimensión 360</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Include All CSS -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="css/flaticon.css"/>
-        <link rel="stylesheet" type="text/css" href="css/boxicons.css"/>
+    <!-- Include All CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css"/>
+    <link rel="stylesheet" type="text/css" href="css/boxicons.css"/>
 
-        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
-        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
 
-        <link rel="stylesheet" type="text/css" href="css/lightcase.css"/>
-        <link rel="stylesheet" type="text/css" href="css/settings.css"/>
-        <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/lightcase.css"/>
+    <link rel="stylesheet" type="text/css" href="css/settings.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
 
-        <link rel="stylesheet" type="text/css" href="css/preset.css"/>
-        <link rel="stylesheet" type="text/css" href="css/ignore_for_wp.css"/>
-        <link rel="stylesheet" type="text/css" href="css/theme.css"/>
-        <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/preset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ignore_for_wp.css"/>
+    <link rel="stylesheet" type="text/css" href="css/theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/services.css"/>
 
-        <!-- Favicon Icon -->
-        <link rel="icon"  type="image/png" href="images/logo.png">
-        <!-- Favicon Icon -->
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Favicon Icon -->
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3X8WM8DED"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3X8WM8DED"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-            gtag('config', 'G-G3X8WM8DED');
-        </script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-        <!-- Netlify Config-->
-        <!-- Include the script that enables Netlify Identity on this page. -->
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        gtag('js', new Date());
+
+        gtag('config', 'G-G3X8WM8DED');
+    </script>
+
+    <!-- Netlify Config-->
+    <!-- Include the script that enables Netlify Identity on this page. -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 
-    </head>
-    <body>
-    <!-- WhataApp -->
+</head>
+<body>
+<!-- WhataApp -->
 
-    <div id="whatsApp"></div>
-    <script type="text/javascript">
-        $(function () {
-            $('#whatsApp').floatingWhatsApp({
-                phone: '5491133359850'
-            });
+<div id="whatsApp"></div>
+<script type="text/javascript">
+    $(function () {
+        $('#whatsApp').floatingWhatsApp({
+            phone: '5491133359850'
         });
-    </script>
+    });
+</script>
 
 
-    <!-- Messenger Plugin de chat Code -->
-    <div id="fb-root"></div>
+<!-- Messenger Plugin de chat Code -->
+<div id="fb-root"></div>
 
-    <!-- Your Plugin de chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
+<!-- Your Plugin de chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "111649861403678");
+    chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v13.0'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Preloader Start -->
+<div class="preloader">
+    <div class="la-ball-scale-multiple la-2x">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
+</div>
 
-    <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "111649861403678");
-        chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                xfbml            : true,
-                version          : 'v13.0'
-            });
-        };
-
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- Preloader Start -->
-    <div class="preloader">
-        <div class="la-ball-scale-multiple la-2x">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+<!-- Preloader Start -->
+<div class="preloader">
+    <div class="la-ball-scale-multiple la-2x">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
+</div>
+<!-- Preloader Start -->
 
-        <!-- Preloader Start -->
-        <div class="preloader">
-            <div class="la-ball-scale-multiple la-2x">
-                <div></div>
-                <div></div>
-                <div></div>
+<!-- Header 01 Start -->
+<section id="home" class="top_bar">
+    <header class="header_01 isSticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-3">
+                    <div class="logo_01">
+                        <a href="index.html">
+                            <img src="images/logo.png"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-9">
+                    <nav class="menu_1">
+                        <div class="menuButton">
+                            <a href="#">Menu<i class="bx bx-menu"></i></a>
+                        </div>
+                        <ul>
+                            <li class="current-menu-item menu-item-has-children">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#company">Nosotros</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="our_services.html">Servicios</a>
+                            </li>
+                            <li><a href="blog_standard.html">Blog</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+
             </div>
         </div>
-        <!-- Preloader Start -->
+    </header>
+</section>
+<div class="blanks"></div>
+<!-- Header 01 End -->
 
-        <!-- Header 01 Start -->
-        <section id="home" class="top_bar">
-            <header class="header_01 isSticky">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5 col-lg-3">
-                            <div class="logo_01">
-                                <a href="index.html">
-                                    <img src="images/logo.png"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-lg-9">
-                            <nav class="menu_1">
-                                <div class="menuButton">
-                                    <a href="#">Menu<i class="bx bx-menu"></i></a>
-                                </div>
-                                <ul>
-                                    <li class="current-menu-item menu-item-has-children">
-                                        <a href="#home">Home</a>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#company">Nosotros</a>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="our_services.html">Servicios</a>
-                                    </li>
-                                    <li><a href="blog_standard.html">Blog</a></li>
-                                    <li><a href="#contact">Contacto</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-
-
-                    </div>
-                </div>
-            </header>
-        </section>
-        <div class="blanks"></div>
-        <!-- Header 01 End -->
-
-        <!-- Popup Search Start -->
-        <section class="popup_search_sec">
-            <div class="popup_search_overlay"></div>
-            <div class="pop_search_background">
-                <div class="middle_search">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <div class="popup_search_form">
-                                    <form method="get" action="#">
-                                        <input type="search" name="s" id="s" placeholder="Type Words and Hit Enter">
-                                        <button type="submit"><i class="bx bx-search"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Popup Search End -->
-
-        <!-- Slider 01 Start -->
-        <section class="slider_01">
-            <div class="rev_slider_wrapper">
-                <div id="rev_slider_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
-                    <ul>
-                        <li data-index="rs-1" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                            <img src="images/car/table-2.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                            <div class="tp-caption tp-heading"
-                                 data-x="['left']"
-                                 data-hoffset="['0']"
-
-                                 data-y="['middle']"
-                                 data-voffset="['-80px','-80px','-70px','-150px']"
-
-                                 data-fontsize="['65','65','55','35']"
-                                 data-fontweight="600"
-                                 data-lineheight="['75','75','65','45']"
-                                 data-width="['680','680','570','100%']"
-                                 data-height="['auto']"
-                                 data-whitesapce="['normal']"
-                                 data-color="['#FFF']"
-
-                                 data-type="text"
-                                 data-responsive_offset="on"
-
-                                 data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-
-                                 data-textAlign="['left']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[0,0,0,25]"
-                                 >Dimensión 360 Desarrollo de negocios</div>
-                            <div class="tp-caption tp-buttons"
-                                 data-x="['left']"
-                                 data-hoffset="['0']"
-
-                                 data-y="['middle']"
-                                 data-voffset="['125px','125px','125px','90']"
-
-                                 data-fontsize="['18','18','18','18']"
-                                 data-fontweight="300"
-                                 data-lineheight="['27','27','27','27']"
-                                 data-width="['430','400','400','100%']"
-                                 data-height="['auto']"
-                                 data-whitesapce="['normal']"
-                                 data-color="['#ced4da']"
-
-                                 data-type="text"
-                                 data-responsive_offset="on"
-
-                                 data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-
-                                 data-textAlign="['left']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[0,0,0,25]"
-                                 ><a href="our_services.html" class="fnc_btn reverses"><span>Servicios<i class="bx bx-right-arrow-alt"></i></span></a>
-                                 <a href="#company" class="fnc_btn fnc_light"><span>Nosotros<i class="bx bx-right-arrow-alt"></i></span></a></div>
-                        </li>
-                        <li data-index="rs-2" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                            <img src="images/car/design-10.jpeg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                            <div class="tp-caption tp-heading"
-                                 data-x="['left']"
-                                 data-hoffset="['0']"
-
-                                 data-y="['middle']"
-                                 data-voffset="['-80px','-80px','-70px','-150px']"
-
-                                 data-fontsize="['65','65','55','35']"
-                                 data-fontweight="600"
-                                 data-lineheight="['75','75','65','45']"
-                                 data-width="['680','680','570','100%']"
-                                 data-height="['auto']"
-                                 data-whitesapce="['normal']"
-                                 data-color="['#FFF']"
-
-                                 data-type="text"
-                                 data-responsive_offset="on"
-
-                                 data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-
-                                 data-textAlign="['left']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[0,0,0,25]"
-                                 >Finanzas, administración y planeación fiscal.</div>
-                            <div class="tp-caption tp-buttons"
-                                 data-x="['left']"
-                                 data-hoffset="['0']"
-
-                                 data-y="['middle']"
-                                 data-voffset="['125px','125px','125px','90']"
-
-                                 data-fontsize="['18','18','18','18']"
-                                 data-fontweight="300"
-                                 data-lineheight="['27','27','27','27']"
-                                 data-width="['430','400','400','100%']"
-                                 data-height="['auto']"
-                                 data-whitesapce="['normal']"
-                                 data-color="['#ced4da']"
-
-                                 data-type="text"
-                                 data-responsive_offset="on"
-
-                                 data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-
-                                 data-textAlign="['left']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[0,0,0,25]"
-                                 ><a href="our_services.html" class="fnc_btn reverses"><span>Servicios<i class="bx bx-right-arrow-alt"></i></span></a>
-                                 <a href="finance_service.html" class="fnc_btn fnc_light"><span>Saber más<i class="bx bx-right-arrow-alt"></i></span></a></div>
-                        </li>
-                        <li data-index="rs-3" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                            <img src="images/car/hire-2.jpeg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                            <div class="tp-caption tp-heading"
-                                 data-x="['left']"
-                                 data-hoffset="['0']"
-
-                                 data-y="['middle']"
-                                 data-voffset="['-80px','-80px','-70px','-150px']"
-
-                                 data-fontsize="['65','65','55','35']"
-                                 data-fontweight="600"
-                                 data-lineheight="['75','75','65','45']"
-                                 data-width="['680','680','570','100%']"
-                                 data-height="['auto']"
-                                 data-whitesapce="['normal']"
-                                 data-color="['#FFF']"
-
-                                 data-type="text"
-                                 data-responsive_offset="on"
-
-                                 data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-
-                                 data-textAlign="['left']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[0,0,0,25]"
-                                 >Identidad corporativa, impresos y promocionales.</div>
-                            <div class="tp-caption tp-buttons"
-                                 data-x="['left']"
-                                 data-hoffset="['0']"
-
-                                 data-y="['middle']"
-                                 data-voffset="['125px','125px','125px','90']"
-
-                                 data-fontsize="['18','18','18','18']"
-                                 data-fontweight="300"
-                                 data-lineheight="['27','27','27','27']"
-                                 data-width="['430','400','400','100%']"
-                                 data-height="['auto']"
-                                 data-whitesapce="['normal']"
-                                 data-color="['#ced4da']"
-
-                                 data-type="text"
-                                 data-responsive_offset="on"
-
-                                 data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-
-                                 data-textAlign="['left']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[0,0,0,25]"
-                                 ><a href="our_services.html" class="fnc_btn reverses"><span>Servicios<i class="bx bx-right-arrow-alt"></i></span></a>
-                                 <a href="identity_service.html" class="fnc_btn fnc_light"><span>Saber más<i class="bx bx-right-arrow-alt"></i></span></a></div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- Slider 01 End -->
-
-        <!-- About US Section Start -->
-        <section id="company" class="about_us_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                        <div style="text-align: center;" class="ab_images">
-                            <img style="text-align: center;" src="images/logo-white.png" alt=""/>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-6 noPaddingRight">
-                        <div class="ab_content">
-                            <h2>
-                                ¿Quiénes somos?
-
-                            </h2>
-                            <p style="text-align: justify;">
-                                Con la suma de talentos y más de 22 años de experiencia nace Dimensión 360. Dedicados a la innovación y la transformación de las empresas, mejorando su productividad, rentabilidad y cultura organizacional.
-                                Nuestro logo en su forma ascendente es creativo e inspirador, transforma, evoluciona e impulsa a la mejora continua, es aspiracional.
-                            </p>
-                            <p style="text-align: justify;">
-                                De forma descendente es analítico, va de lo general a lo particular, simboliza el ciclo comercial de ventas, mejora las decisiones, busca la causa raíz y motiva al cambio.
-                            </p>
-                            <div>
-                                <p>
-                                    Nuestro lema:
-                                    <span style="font-style: italic;">“Hazlo con pasión, haz que las cosas sucedan”.</span>
-                                </p>    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About US Section End -->
-
-        <!-- Objetivo Section Start -->
-        <section id="company" class="about_us_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6 noPaddingRight">
-                        <div class="ab_content">
-                            <h2>
-                                Objetivo
-
-                            </h2>
-                            <p style="text-align: justify;">
-                                Ofrecer a través de nuestros servicios, soluciones y herramientas que mejoren sus resultados
-                                y procesos, facilitando la forma de hacer las cosas.
-                            </p>
-                            <p style="text-align: justify;">
-                                Nuestro valor agregado es crear experiencia y relaciones de largo plazo,
-                                ofreciendo servicios innovadores que motiven a todos sus colaboradores
-                                y equipos de trabajo a formar una nueva cultura de trabajo.
-                                Nuestro plus, fomentar una imagen y sentido de pertenencia con nuestro
-                                servicio especializado de personalización que promueve el arraigo
-                                de sus colaboradores.
-
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-6">
-                        <div class="ab_images">
-                            <img src="images/cooperate1.jpeg" alt=""/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Objetivo Section End -->
-
-         <!-- Adn -->
-         <section class="case_section_02">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 text-left">
-                        <h2 class="sec_title">Nuestro <span style="color: #112ea3;">ADN</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 noPadding">
-                        <div class="case_slider_02_area">
-                            <div class="case_slider_02 owl-carousel">
-                                <div class="case_02">
-                                    <div class="c02_det">
-                                        <h2><a href="#">Misión</a></h2>
-                                        <p style="text-align: justify;">
-                                            Crear valor agregado y visión estratégica para todos
-                                            nuestros colaboradores, clientes y socios comerciales
-                                            a través de nuestras 7 opciones de servicios.
-
-                                        </p>
-                                        </br>
-                                    </div>
-                                </div>
-                                <div class="case_02">
-                                    <div class="c02_det">
-                                        <h2><a href="#">Visión</a></h2>
-                                        <p style="text-align: justify;">
-                                            Ofrecer servicios diferenciados en consultoría
-                                            siendo reconocidos  por la experiencia de mejores prácticas,
-                                            resultados y el valor agregado entregado a nuestros clientes
-                                            y socios comerciales.
-
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="case_02">
-                                    <div class="c02_det">
-                                        <h2><a href="#">Valores</a></h2>
-                                        <p style="text-align: justify;">
-                                            Lealtad, Honestidad, Respeto, Liderazgo, Compromiso,
-                                            Responsabilidad, Humildad.
-
-                                        </p>
-                                        </br></br></br>
-                                    </div>
-                                </div>
-                                <div class="case_02">
-                                    <div class="c02_det">
-                                        <h2><a href="#">Competencias</a></h2>
-                                        <p style="text-align: justify;">
-                                            Trabajo en equipo, Asertividad, Desarrollo de líderes,
-                                            Organización y Planificación, Orientación al Cliente,
-                                            Ejecución y Sentido de urgencia.
-
-                                        </p>
-                                        </br>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Adn End -->
-
-        <!-- Service Section Start -->
-        <section class="service_section">
+<!-- Popup Search Start -->
+<section class="popup_search_sec">
+    <div class="popup_search_overlay"></div>
+    <div class="pop_search_background">
+        <div class="middle_search">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="sec_title">Nuestros Servicios</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 noPadding">
-                        <div class="service_01_slider owl-carousel">
-                            <div class="service_01">
-                                <div class="sr01_thumb">
-                                    <img src="images/services/operation.jpeg" alt="Operación y comercialización"/>
-                                </div>
-                                <div class="sr01_dtl text-center">
-                                    <i class="flaticon-092-invoice-3"></i>
-                                    <h3><a href="operation_service.html">Operación y </br>comercialización</a></h3>
-                                    <p>
-                                        Diagnosticamos el desempeño y evolución de tus estrategias comerciales
-                                        así como el ciclo de venta. Validamos tus planes comerciales y mercadológicos
-                                        aplicando una metodología diseñada en programas de coaching para equipos
-                                        gerenciales y jefaturas.
-                                    </p>
-                                    <a class="learn_more_lnk" href="operation_service.html"></br>Leer Más</a>
-                                </div>
-                            </div>
-                            <div class="service_01">
-                                <div class="sr01_thumb">
-                                    <img src="images/services/finance.jpeg" alt="Finanzas, administración"/>
-                                </div>
-                                <div class="sr01_dtl text-center">
-                                    <i class="flaticon-205-money-2"></i>
-                                    <h3><a href="finance_service.html">Finanzas, administración </br>y planeación fiscal</a></h3>
-                                    <p>
-                                        Ofrecemos servicios de análisis a la calidad y confiabilidad
-                                        de tu información financiera mediante revisiones estratégicas
-                                        a tus principales indicadores, ayudando a la efectiva toma
-                                        de decisiones.
-                                    </p>
-                                    <a class="learn_more_lnk" href="finance_service.html"></br></br>Leer Más</a>
-                                </div>
-                            </div>
-                            <div class="service_01">
-                                <div class="sr01_thumb">
-                                    <img src="images/services/human.jpeg" alt="Capital Humano"/>
-                                </div>
-                                <div class="sr01_dtl text-center">
-                                    <i class="flaticon-075-user-3"></i>
-                                    <h3><a href="capital_service.html">Capital humano y desarrollo</br>organizacional</a></h3>
-                                    <p>
-                                        Proveemos y administramos la mejor plataforma de herramientas
-                                        de medición de tu talento: psicometrías, evaluaciones de desempeño,
-                                        evaluaciones 360 y clima laboral.
-                                    </p>
-                                    <a class="learn_more_lnk" href="capital_service.html"></br></br></br>Leer Más</a>
-                                </div>
-                            </div>
-                            <div class="service_01">
-                                <div class="sr01_thumb">
-                                    <img src="images/services/headhuntinh.jpeg" alt="Talento">
-                                </div>
-                                <div class="sr01_dtl text-center">
-                                    <i class="flaticon-095-magnifying-glass"></i>
-                                    <h3>
-                                        <a href="headhunting_service.html">Atracción de talento </br>(Headhunting), evaluación </br>de candidatos,
-                                    </br>Assessment Center.
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        Contamos con un equipo de profesionales dedicados a la aplicación
-                                        del  método más eficiente para la evaluación del talento.
-                                    </p>
-                                    <a class="learn_more_lnk" href="headhunting_service.html">Leer Más</a>
-                                </div>
-                            </div>
-                            <div class="service_01">
-                                <div class="sr01_thumb">
-                                    <img src="images/services/control.jpeg" alt="COSO">
-                                </div>
-                                <div class="sr01_dtl text-center">
-                                    <i class="flaticon-137-money-bag-3"></i>
-                                    <h3><a href="coso_service.html">Control interno, procesos,
-                                    </br>medición del riesgo </br>y método COSO.</a></h3>
-                                    <p>
-                                        Desarrollamos para ti un modelo de riesgo en base a las necesidades
-                                        de tu negocio.
-                                    </p>
-                                    <a class="learn_more_lnk" href="coso_service.html"></br></br></br>Leer Más</a>
-                                </div>
-                            </div>
-                            <div class="service_01">
-                                <div class="sr01_thumb">
-                                    <img src="images/services/gobierno.jpeg" alt="Consejero">
-                                </div>
-                                <div class="sr01_dtl text-center">
-                                    <i class="flaticon-127-profits-4"></i>
-                                    <h3><a href="coorporate_service.html">Consejero independiente
-                                    </br>y gobierno corporativo</a></h3>
-                                    <p>
-                                        Ayudamos a tu empresa a incorporar la figura de gobierno corporativo.
-                                    </p>
-                                    <a class="learn_more_lnk" href="coorporate_service.html"></br></br></br></br></br>Leer Más</a>
-                                </div>
-                            </div>
-                            <div class="service_01">
-                                <div class="sr01_thumb">
-                                    <img src="images/services/identidad.jpeg" alt="Promocionales">
-                                </div>
-                                <div class="sr01_dtl text-center">
-                                    <i class="flaticon-122-idea-3"></i>
-                                    <h3><a href="identity_service.html">Identidad corporativa, </br>impresos
-                                    </br>y promocionales</a></h3>
-                                    <p>
-                                        Impulsamos tus ideas por medio de servicios creativos.
-                                    </p>
-                                    <a class="learn_more_lnk" href="identity_service.html"></br></br></br>Leer Más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Service Section End -->
-
-        <!-- Quote Section Start -->
-        <section class="quote_section" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="sec_title lights">Contacto</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="quote_form">
-                            <form  method="POST"
-                                   id="my-form"
-                                   action="https://script.google.com/macros/s/AKfycbxw9Ag3VRnpNDkp2CuwK6v3xjzq3FPuMtWIpjlLUfaBFCAEvVCUDX1fSGYL2gTilc9d/exec"
-                            >
-                                <div class="row">
-                                    <div class="col-md-6 col-lg-6">
-                                        <input required type="text" name="Name" placeholder="Nombre *"/>
-                                    </div>
-                                    <div class="col-md-6 col-lg-6">
-                                        <input required type="text" name="LastName" placeholder="Apellidos *"/>
-                                    </div>
-                                    <div class="col-md-6 col-lg-6">
-                                        <input required  type="email" name="Email" placeholder="Email *"/>
-                                    </div>
-                                    <div class="col-md-6 col-lg-6">
-                                        <input required type="text" name="Phone" placeholder="Teléfono *"/>
-                                    </div>
-                                    <div class="col-md-6 col-lg-6">
-                                        <select required name="Service">
-                                            <option value="No selecciono">¿Qué servicio me interesa?</option>
-                                            <option value="Operación y comercialización">Operación y comercialización.</option>
-                                            <option value="Finanzas, administración y planeación fiscal">Finanzas, administración y planeación fiscal.</option>
-                                            <option value="Capital humano y desarrollo organizacional">Capital humano y desarrollo organizacional.</option>
-                                            <option value="Atracción de talento (Headhunting)">Atracción de talento (Headhunting).</option>
-                                            <option value="Control interno, procesos, medición del riesgo y método COSO">Control interno, procesos, medición del riesgo y método COSO.</option>
-                                            <option value="Consejero independiente y gobierno corporativo">Consejero independiente y gobierno corporativo.</option>
-                                            <option value="Identidad corporativa, impresos y promocionales">Identidad corporativa, impresos y promocionales.</option>
-                                            <option value="Otro">Otro.</option>
-
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6 col-lg-6">
-                                        <input type="text" name="Company" placeholder="Compañia"/>
-                                    </div>
-                                    <div class="col-md-6 col-lg-6">
-                                        <input type="text" name="Notes" placeholder="Notas"/>
-                                    </div>
-                                    <div class="col-md-6 col-lg-6">
-                                        <button type="submit"><span>Enviar<i class="bx bx-right-arrow-alt"></i></span></button>
-                                    </div>
-                                </div>
+                        <div class="popup_search_form">
+                            <form method="get" action="#">
+                                <input type="search" name="s" id="s" placeholder="Type Words and Hit Enter">
+                                <button type="submit"><i class="bx bx-search"></i></button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Quote Section End -->
+        </div>
+    </div>
+</section>
+<!-- Popup Search End -->
 
-        <!-- Copyright Section Start -->
-        <section class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copbar"></div>
-                        <p class="copies">
-                            Dimensión 360 <a href="mailto:contacto@dimension360.mx"> Email </a> <a href="tel:3343044688">(33) 43 04 46 88</a>
+<!-- Slider 01 Start -->
+<section class="slider_01">
+    <div class="rev_slider_wrapper">
+        <div id="rev_slider_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+            <ul>
+                <li data-index="rs-1" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0"
+                    data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+                    data-masterspeed="2000" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500"
+                    data-fsslotamount="7" data-saveperformance="off" data-title="" data-param1="" data-param2=""
+                    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                    data-param9="" data-param10="" data-description="">
+                    <img src="images/car/table-2.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                         data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <div class="tp-caption tp-heading"
+                         data-x="['left']"
+                         data-hoffset="['0']"
+
+                         data-y="['middle']"
+                         data-voffset="['-80px','-80px','-70px','-150px']"
+
+                         data-fontsize="['65','65','55','35']"
+                         data-fontweight="600"
+                         data-lineheight="['75','75','65','45']"
+                         data-width="['680','680','570','100%']"
+                         data-height="['auto']"
+                         data-whitesapce="['normal']"
+                         data-color="['#FFF']"
+
+                         data-type="text"
+                         data-responsive_offset="on"
+
+                         data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+
+                         data-textAlign="['left']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,25]"
+                    >Dimensión 360 Desarrollo de negocios
+                    </div>
+                    <div class="tp-caption tp-buttons"
+                         data-x="['left']"
+                         data-hoffset="['0']"
+
+                         data-y="['middle']"
+                         data-voffset="['125px','125px','125px','90']"
+
+                         data-fontsize="['18','18','18','18']"
+                         data-fontweight="300"
+                         data-lineheight="['27','27','27','27']"
+                         data-width="['430','400','400','100%']"
+                         data-height="['auto']"
+                         data-whitesapce="['normal']"
+                         data-color="['#ced4da']"
+
+                         data-type="text"
+                         data-responsive_offset="on"
+
+                         data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+
+                         data-textAlign="['left']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,25]"
+                    ><a href="our_services.html" class="fnc_btn reverses"><span>Servicios<i
+                            class="bx bx-right-arrow-alt"></i></span></a>
+                        <a href="#company" class="fnc_btn fnc_light"><span>Nosotros<i class="bx bx-right-arrow-alt"></i></span></a>
+                    </div>
+                </li>
+                <li data-index="rs-2" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0"
+                    data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+                    data-masterspeed="2000" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500"
+                    data-fsslotamount="7" data-saveperformance="off" data-title="" data-param1="" data-param2=""
+                    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                    data-param9="" data-param10="" data-description="">
+                    <img src="images/car/design-10.jpeg" alt="" data-bgposition="center center" data-bgfit="cover"
+                         data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <div class="tp-caption tp-heading"
+                         data-x="['left']"
+                         data-hoffset="['0']"
+
+                         data-y="['middle']"
+                         data-voffset="['-80px','-80px','-70px','-150px']"
+
+                         data-fontsize="['65','65','55','35']"
+                         data-fontweight="600"
+                         data-lineheight="['75','75','65','45']"
+                         data-width="['680','680','570','100%']"
+                         data-height="['auto']"
+                         data-whitesapce="['normal']"
+                         data-color="['#FFF']"
+
+                         data-type="text"
+                         data-responsive_offset="on"
+
+                         data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+
+                         data-textAlign="['left']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,25]"
+                    >Finanzas, administración y planeación fiscal.
+                    </div>
+                    <div class="tp-caption tp-buttons"
+                         data-x="['left']"
+                         data-hoffset="['0']"
+
+                         data-y="['middle']"
+                         data-voffset="['125px','125px','125px','90']"
+
+                         data-fontsize="['18','18','18','18']"
+                         data-fontweight="300"
+                         data-lineheight="['27','27','27','27']"
+                         data-width="['430','400','400','100%']"
+                         data-height="['auto']"
+                         data-whitesapce="['normal']"
+                         data-color="['#ced4da']"
+
+                         data-type="text"
+                         data-responsive_offset="on"
+
+                         data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+
+                         data-textAlign="['left']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,25]"
+                    ><a href="our_services.html" class="fnc_btn reverses"><span>Servicios<i
+                            class="bx bx-right-arrow-alt"></i></span></a>
+                        <a href="finance_service.html" class="fnc_btn fnc_light"><span>Saber más<i
+                                class="bx bx-right-arrow-alt"></i></span></a></div>
+                </li>
+                <li data-index="rs-3" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0"
+                    data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+                    data-masterspeed="2000" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500"
+                    data-fsslotamount="7" data-saveperformance="off" data-title="" data-param1="" data-param2=""
+                    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                    data-param9="" data-param10="" data-description="">
+                    <img src="images/car/hire-2.jpeg" alt="" data-bgposition="center center" data-bgfit="cover"
+                         data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <div class="tp-caption tp-heading"
+                         data-x="['left']"
+                         data-hoffset="['0']"
+
+                         data-y="['middle']"
+                         data-voffset="['-80px','-80px','-70px','-150px']"
+
+                         data-fontsize="['65','65','55','35']"
+                         data-fontweight="600"
+                         data-lineheight="['75','75','65','45']"
+                         data-width="['680','680','570','100%']"
+                         data-height="['auto']"
+                         data-whitesapce="['normal']"
+                         data-color="['#FFF']"
+
+                         data-type="text"
+                         data-responsive_offset="on"
+
+                         data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+
+                         data-textAlign="['left']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,25]"
+                    >Identidad corporativa, impresos y promocionales.
+                    </div>
+                    <div class="tp-caption tp-buttons"
+                         data-x="['left']"
+                         data-hoffset="['0']"
+
+                         data-y="['middle']"
+                         data-voffset="['125px','125px','125px','90']"
+
+                         data-fontsize="['18','18','18','18']"
+                         data-fontweight="300"
+                         data-lineheight="['27','27','27','27']"
+                         data-width="['430','400','400','100%']"
+                         data-height="['auto']"
+                         data-whitesapce="['normal']"
+                         data-color="['#ced4da']"
+
+                         data-type="text"
+                         data-responsive_offset="on"
+
+                         data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+
+                         data-textAlign="['left']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,25]"
+                    ><a href="our_services.html" class="fnc_btn reverses"><span>Servicios<i
+                            class="bx bx-right-arrow-alt"></i></span></a>
+                        <a href="identity_service.html" class="fnc_btn fnc_light"><span>Saber más<i
+                                class="bx bx-right-arrow-alt"></i></span></a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Slider 01 End -->
+
+<!-- About US Section Start -->
+<section id="company" class="about_us_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <div style="text-align: center;" class="ab_images">
+                    <img style="text-align: center;" src="images/logo-white.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 noPaddingRight">
+                <div id="somos" class="ab_content">
+                    <h2 id="somos_1">
+                        ¿Quiénes somos?
+
+                    </h2>
+                    <p style="text-align: justify;">
+                        Con la suma de talentos y más de 22 años de experiencia nace Dimensión 360. Dedicados a la
+                        innovación y la transformación de las empresas, mejorando su productividad, rentabilidad y
+                        cultura organizacional.
+                        Nuestro logo en su forma ascendente es creativo e inspirador, transforma, evoluciona e impulsa a
+                        la mejora continua, es aspiracional.
+                    </p>
+                    <p style="text-align: justify;">
+                        De forma descendente es analítico, va de lo general a lo particular, simboliza el ciclo
+                        comercial de ventas, mejora las decisiones, busca la causa raíz y motiva al cambio.
+                    </p>
+                    <div>
+                        <p>
+                            Nuestro lema:
+                            <span style="font-style: italic;">“Hazlo con pasión, haz que las cosas sucedan”.</span>
                         </p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Copyright Section End -->
+        </div>
+    </div>
+</section>
+<!-- About US Section End -->
 
-        <!-- Back To Top Start -->
-        <a href="#" id="backtotop"><i class="bx bxs-arrow-to-top"></i></a>
-        <!-- Back To Top End -->
+<!-- Objetivo Section Start -->
+<section id="company-2" class="about_us_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-6 noPaddingRight">
+                <div class="ab_content">
+                    <h2>
+                        Objetivo
+
+                    </h2>
+                    <p style="text-align: justify;">
+                        Ofrecer a través de nuestros servicios, soluciones y herramientas que mejoren sus resultados
+                        y procesos, facilitando la forma de hacer las cosas.
+                    </p>
+                    <p style="text-align: justify;">
+                        Nuestro valor agregado es crear experiencia y relaciones de largo plazo,
+                        ofreciendo servicios innovadores que motiven a todos sus colaboradores
+                        y equipos de trabajo a formar una nueva cultura de trabajo.
+                        Nuestro plus, fomentar una imagen y sentido de pertenencia con nuestro
+                        servicio especializado de personalización que promueve el arraigo
+                        de sus colaboradores.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="ab_images">
+                    <img src="images/cooperate1.jpeg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Objetivo Section End -->
+
+<!-- Adn -->
+<section class="case_section_02">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 text-left">
+                <h2 class="sec_title">Nuestro <span style="color: #112ea3;">ADN</span></h2>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 noPadding">
+                <div class="case_slider_02_area">
+                    <div class="case_slider_02 owl-carousel">
+                        <div class="case_02">
+                            <div class="c02_det">
+                                <h2><a href="#">Misión</a></h2>
+                                <p style="text-align: justify;">
+                                    Crear valor agregado y visión estratégica para todos
+                                    nuestros colaboradores, clientes y socios comerciales
+                                    a través de nuestras 7 opciones de servicios.
+
+                                </p>
+                                </br>
+                            </div>
+                        </div>
+                        <div class="case_02">
+                            <div class="c02_det">
+                                <h2><a href="#">Visión</a></h2>
+                                <p style="text-align: justify;">
+                                    Ofrecer servicios diferenciados en consultoría
+                                    siendo reconocidos por la experiencia de mejores prácticas,
+                                    resultados y el valor agregado entregado a nuestros clientes
+                                    y socios comerciales.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="case_02">
+                            <div class="c02_det">
+                                <h2><a href="#">Valores</a></h2>
+                                <p style="text-align: justify;">
+                                    Lealtad, Honestidad, Respeto, Liderazgo, Compromiso,
+                                    Responsabilidad, Humildad.
+
+                                </p>
+                                </br></br></br>
+                            </div>
+                        </div>
+                        <div class="case_02">
+                            <div class="c02_det">
+                                <h2><a href="#">Competencias</a></h2>
+                                <p style="text-align: justify;">
+                                    Trabajo en equipo, Asertividad, Desarrollo de líderes,
+                                    Organización y Planificación, Orientación al Cliente,
+                                    Ejecución y Sentido de urgencia.
+
+                                </p>
+                                </br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Adn End -->
+
+<!-- Service Section Start -->
+<section class="service_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="sec_title">Nuestros Servicios</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 noPadding">
+                <div class="service_01_slider owl-carousel">
+                    <div class="service_01">
+                        <div class="sr01_thumb">
+                            <img src="images/services/operation.jpeg" alt="Operación y comercialización"/>
+                        </div>
+                        <div class="sr01_dtl text-center">
+                            <i class="flaticon-092-invoice-3"></i>
+                            <h3><a href="operation_service.html">Operación y </br>comercialización</a></h3>
+                            <p>
+                                Diagnosticamos el desempeño y evolución de tus estrategias comerciales
+                                así como el ciclo de venta. Validamos tus planes comerciales y mercadológicos
+                                aplicando una metodología diseñada en programas de coaching para equipos
+                                gerenciales y jefaturas.
+                            </p>
+                            <a class="learn_more_lnk" href="operation_service.html"></br>Leer Más</a>
+                        </div>
+                    </div>
+                    <div class="service_01">
+                        <div class="sr01_thumb">
+                            <img src="images/services/finance.jpeg" alt="Finanzas, administración"/>
+                        </div>
+                        <div class="sr01_dtl text-center">
+                            <i class="flaticon-205-money-2"></i>
+                            <h3><a href="finance_service.html">Finanzas, administración </br>y planeación fiscal</a>
+                            </h3>
+                            <p>
+                                Ofrecemos servicios de análisis a la calidad y confiabilidad
+                                de tu información financiera mediante revisiones estratégicas
+                                a tus principales indicadores, ayudando a la efectiva toma
+                                de decisiones.
+                            </p>
+                            <a class="learn_more_lnk" href="finance_service.html"></br></br>Leer Más</a>
+                        </div>
+                    </div>
+                    <div class="service_01">
+                        <div class="sr01_thumb">
+                            <img src="images/services/human.jpeg" alt="Capital Humano"/>
+                        </div>
+                        <div class="sr01_dtl text-center">
+                            <i class="flaticon-075-user-3"></i>
+                            <h3><a href="capital_service.html">Capital humano y desarrollo</br>organizacional</a></h3>
+                            <p>
+                                Proveemos y administramos la mejor plataforma de herramientas
+                                de medición de tu talento: psicometrías, evaluaciones de desempeño,
+                                evaluaciones 360 y clima laboral.
+                            </p>
+                            <a class="learn_more_lnk" href="capital_service.html"></br></br></br>Leer Más</a>
+                        </div>
+                    </div>
+                    <div class="service_01">
+                        <div class="sr01_thumb">
+                            <img src="images/services/headhuntinh.jpeg" alt="Talento">
+                        </div>
+                        <div class="sr01_dtl text-center">
+                            <i class="flaticon-095-magnifying-glass"></i>
+                            <h3>
+                                <a href="headhunting_service.html">Atracción de talento </br>(Headhunting),
+                                    evaluación </br>de candidatos,
+                                    </br>Assessment Center.
+                                </a>
+                            </h3>
+                            <p>
+                                Contamos con un equipo de profesionales dedicados a la aplicación
+                                del método más eficiente para la evaluación del talento.
+                            </p>
+                            <a class="learn_more_lnk" href="headhunting_service.html">Leer Más</a>
+                        </div>
+                    </div>
+                    <div class="service_01">
+                        <div class="sr01_thumb">
+                            <img src="images/services/control.jpeg" alt="COSO">
+                        </div>
+                        <div class="sr01_dtl text-center">
+                            <i class="flaticon-137-money-bag-3"></i>
+                            <h3><a href="coso_service.html">Control interno, procesos,
+                                </br>medición del riesgo </br>y método COSO.</a></h3>
+                            <p>
+                                Desarrollamos para ti un modelo de riesgo en base a las necesidades
+                                de tu negocio.
+                            </p>
+                            <a class="learn_more_lnk" href="coso_service.html"></br></br></br>Leer Más</a>
+                        </div>
+                    </div>
+                    <div class="service_01">
+                        <div class="sr01_thumb">
+                            <img src="images/services/gobierno.jpeg" alt="Consejero">
+                        </div>
+                        <div class="sr01_dtl text-center">
+                            <i class="flaticon-127-profits-4"></i>
+                            <h3><a href="coorporate_service.html">Consejero independiente
+                                </br>y gobierno corporativo</a></h3>
+                            <p>
+                                Ayudamos a tu empresa a incorporar la figura de gobierno corporativo.
+                            </p>
+                            <a class="learn_more_lnk" href="coorporate_service.html"></br></br></br></br></br>Leer
+                                Más</a>
+                        </div>
+                    </div>
+                    <div class="service_01">
+                        <div class="sr01_thumb">
+                            <img src="images/services/identidad.jpeg" alt="Promocionales">
+                        </div>
+                        <div class="sr01_dtl text-center">
+                            <i class="flaticon-122-idea-3"></i>
+                            <h3><a href="identity_service.html">Identidad corporativa, </br>impresos
+                                </br>y promocionales</a></h3>
+                            <p>
+                                Impulsamos tus ideas por medio de servicios creativos.
+                            </p>
+                            <a class="learn_more_lnk" href="identity_service.html"></br></br></br>Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Service Section End -->
+
+<!-- Quote Section Start -->
+<section class="quote_section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="sec_title lights">Contacto</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="quote_form">
+                    <form method="POST"
+                          id="my-form"
+                          action="https://script.google.com/macros/s/AKfycbxw9Ag3VRnpNDkp2CuwK6v3xjzq3FPuMtWIpjlLUfaBFCAEvVCUDX1fSGYL2gTilc9d/exec"
+                    >
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                                <input required type="text" name="Name" placeholder="Nombre *"/>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <input required type="text" name="LastName" placeholder="Apellidos *"/>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <input required type="email" name="Email" placeholder="Email *"/>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <input required type="text" name="Phone" placeholder="Teléfono *"/>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <select required name="Service">
+                                    <option value="No selecciono">¿Qué servicio me interesa?</option>
+                                    <option value="Operación y comercialización">Operación y comercialización.</option>
+                                    <option value="Finanzas, administración y planeación fiscal">Finanzas,
+                                        administración y planeación fiscal.
+                                    </option>
+                                    <option value="Capital humano y desarrollo organizacional">Capital humano y
+                                        desarrollo organizacional.
+                                    </option>
+                                    <option value="Atracción de talento (Headhunting)">Atracción de talento
+                                        (Headhunting).
+                                    </option>
+                                    <option value="Control interno, procesos, medición del riesgo y método COSO">Control
+                                        interno, procesos, medición del riesgo y método COSO.
+                                    </option>
+                                    <option value="Consejero independiente y gobierno corporativo">Consejero
+                                        independiente y gobierno corporativo.
+                                    </option>
+                                    <option value="Identidad corporativa, impresos y promocionales">Identidad
+                                        corporativa, impresos y promocionales.
+                                    </option>
+                                    <option value="Otro">Otro.</option>
+
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <input type="text" name="Company" placeholder="Compañia"/>
+                            </div>
+                            <div class="col-md-12 col-lg-12">
+                                <textarea class="text-area" name="Notes" placeholder="Notas" cols="80" rows="8"></textarea>
+                            </div>
+                            <div class="col-md-12 col-lg-12">
+                                <button type="submit"><span>Enviar<i class="bx bx-right-arrow-alt"></i></span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Quote Section End -->
+
+<!-- Copyright Section Start -->
+<section class="copyright">
+    <div class="container">
+        <div class="row footer">
+            <div class="col-md-6 col-lg-6">
+                <a class="footer" href="mailto:contacto@dimension360.mx"> contacto@dimension360.mx </a>
+            </div>
+            <div class="col-md-6 col-lg-6 ">
+                <a class="footer" href="tel:3343044688">(33) 43 04 46 88</a>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+<!-- Copyright Section End -->
+
+<!-- Back To Top Start -->
+<a href="#" id="backtotop"><i class="bx bxs-arrow-to-top"></i></a>
+<!-- Back To Top End -->
 
 
-        <!-- Include All JS -->
-        <script src="js/jquery.js"></script>
-        <script src="js/jquery-ui.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.shuffle.min.js"></script>
-        <script src="https://maps.google.com/maps/api/js?key=AIzaSyBJtPMZ_LWZKuHTLq5o08KSncQufIhPU3o"></script>
-        <script src="js/gmaps.js"></script>
-        <script src="js/jquery.plugin.min.js"></script>
-        <script src="js/jquery.countdown.min.js"></script>
+<!-- Include All JS -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.shuffle.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyBJtPMZ_LWZKuHTLq5o08KSncQufIhPU3o"></script>
+<script src="js/gmaps.js"></script>
+<script src="js/jquery.plugin.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
 
-        <script src="js/jquery.appear.js"></script>
-        <script src="js/lightcase.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/lightcase.js"></script>
 
-        <script src="js/jquery.themepunch.tools.min.js"></script>
-        <script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/jquery.themepunch.tools.min.js"></script>
+<script src="js/jquery.themepunch.revolution.min.js"></script>
 
-        <!-- Rev slider Add on Start -->
-        <script src="js/extensions/revolution.extension.actions.min.js"></script>
-        <script src="js/extensions/revolution.extension.carousel.min.js"></script>
-        <script src="js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script src="js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="js/extensions/revolution.extension.migration.min.js"></script>
-        <script src="js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="js/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="js/extensions/revolution.extension.video.min.js"></script>
-        <!-- Rev slider Add on End -->
+<!-- Rev slider Add on Start -->
+<script src="js/extensions/revolution.extension.actions.min.js"></script>
+<script src="js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="js/extensions/revolution.extension.migration.min.js"></script>
+<script src="js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="js/extensions/revolution.extension.video.min.js"></script>
+<!-- Rev slider Add on End -->
 
-        <script src="js/theme.js"></script>
+<script src="js/theme.js"></script>
 
-        <!-- WhatsApp button --->
-        <script type="text/javascript" src="js/floating-wpp.min.js"></script>
-        <link rel="stylesheet" href="js/floating-wpp.min.css">
-        <script src="js/query.serialize-object.min.js"></script>
-        <script type="text/javascript" src="js/services.js"></script>
+<!-- WhatsApp button --->
+<script type="text/javascript" src="js/floating-wpp.min.js"></script>
+<link rel="stylesheet" href="js/floating-wpp.min.css">
+<script src="js/query.serialize-object.min.js"></script>
+<script type="text/javascript" src="js/services.js"></script>
 
-        <!-- Netlify Config-->
-        <script>
-            if (window.netlifyIdentity) {
-              window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                  window.netlifyIdentity.on("login", () => {
+<!-- Netlify Config-->
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
                     document.location.href = "/admin/";
-                  });
-                }
-              });
+                });
             }
-        </script>
-    </body>
+        });
+    }
+</script>
+</body>
 </html>
