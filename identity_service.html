@@ -30,6 +30,49 @@
         <!-- Favicon Icon -->
     </head>
     <body>
+        <!-- WhataApp -->
+
+        <div id="whatsApp"></div>
+        <script type="text/javascript">
+            $(function () {
+                $('#whatsApp').floatingWhatsApp({
+                    phone: '5491133359850'
+                });
+            });
+        </script>
+
+
+        <!-- Messenger Plugin de chat Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Plugin de chat code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "111649861403678");
+            chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+
+        <!-- Your SDK code -->
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v13.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
         <!-- Preloader Start -->
         <div class="preloader">
             <div class="la-ball-scale-multiple la-2x">
@@ -214,5 +257,12 @@
         <!-- Rev slider Add on End -->
 
         <script src="js/theme.js"></script>
+
+        <!-- WhatsApp button --->
+        <script type="text/javascript" src="js/floating-wpp.min.js"></script>
+        <link rel="stylesheet" href="js/floating-wpp.min.css">
+        <script src="js/query.serialize-object.min.js"></script>
+        <script type="text/javascript" src="js/services.js"></script>
+        
     </body>
 </html>
