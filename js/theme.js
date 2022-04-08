@@ -61,7 +61,7 @@ License URI:
             loop: true,
             autoplay: true,
             autoplayHoverPause: true,
-            autoplaySpeed: 10000,
+            autoplayTimeout: 2500,
             margin: 0,
             responsiveClass: true,
             nav: true,
