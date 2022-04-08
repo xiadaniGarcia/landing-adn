@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html ng-app="myMod">
+<html>
 
 <head>
     <meta charset="utf-8" />
     <title>AngularJS Plunker</title>
-    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
-    <script src="https://code.angularjs.org/1.4.9/angular-route.js"></script>
-    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.min.js"></script>
+    <script src="app-2.js"></script>
 </head>
 
 <body>
-<div ng-controller="operation">
-    Hi {{publishedAt}}:<br/>
-    {{title}}
-    {{content}}
-    {{image}}
-    {{seo}}
-</div>
 
+<div ng-app="app">
+    <script type="text/ng-template" id="hello.html">
+        <div>
+            Hi, {{model.blogId}}!
+        </div>
+    </script>
+    <script type="text/ng-template" id="address.html">
+        <div>
+            The address is: {{model.country}} - {{model.state}} - {{model.city}}
+        </div>
+    </script>
+    <a href="#/blog/1234">Aron</a>
+    <a href="#/address/Brasil/São Paulo/São Bernardo">Address</a>
+
+    <ng-view></ng-view>
+</div>
 </body>
 
 </html>
