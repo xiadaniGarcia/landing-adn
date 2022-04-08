@@ -21,3 +21,8 @@
 .text-area{
     height: 7rem!important;
 }
+.privacy{
+    font-size: 17px;
+    text-align: justify;
+    text-justify: inter-word;
+}
