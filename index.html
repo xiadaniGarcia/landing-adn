@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myMod">
 <head>
     <title>Dimensión 360</title>
     <meta charset="UTF-8">
@@ -538,10 +538,10 @@
                 <h2 class="sec_title">Nuestros Servicios</h2>
             </div>
         </div>
-        <div >
+        <div>
 
 
-            <div >
+            <div>
                 <div class="owl-carousel owl-theme">
                     <div class="item">
                         <h4>1</h4>
@@ -583,92 +583,94 @@
             </div>
 
 
-
-
-
             <div class="row">
-            <div class="col-lg-12">
-                <div class=" owl-carousel owl-theme service_01_slider ">
-                    <div class="item service_01">
-                        <div class="sr01_thumb">
-                            <img src="images/services/operation.jpeg" alt="Operación y comercialización"/>
+                <div class="col-lg-12">
+                    <div class=" owl-carousel owl-theme service_01_slider ">
+                        <div class="item service_01"  ng-controller="operation">
+                            <div class="sr01_thumb">
+                                <img src="{{image}}"  alt="Operación y comercialización"/>
+                            </div>
+                            <div class="sr01_dtl text-center">
+                                <i class="flaticon-092-invoice-3"></i>
+                                <h3><a href="operation_service.html">{{title}}</a></h3>
+                                <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="operation_service.html">Leer
+                                    Más</a></div>
+                            </div>
                         </div>
-                        <div class="sr01_dtl text-center">
-                            <i class="flaticon-092-invoice-3"></i>
-                            <h3><a href="operation_service.html">Operación y comercialización</a></h3>
-                            <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="operation_service.html">Leer Más</a></div>
+                        <div class="item service_01" ng-controller="finance" >
+                            <div class="sr01_thumb">
+                                <img src="{{image}}" alt="Finanzas, administración"/>
+                            </div>
+                            <div class="sr01_dtl text-center">
+                                <i class="flaticon-205-money-2"></i>
+                                <h3><a href="finance_service.html">{{title}}</a>
+                                </h3>
+                                <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="finance_service.html">Leer
+                                    Más</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item service_01">
-                        <div class="sr01_thumb">
-                            <img src="images/services/finance.jpeg" alt="Finanzas, administración"/>
+                        <div class="item service_01" ng-controller="capital">
+                            <div class="sr01_thumb">
+                                <img src="{{image}}" alt="Capital Humano"/>
+                            </div>
+                            <div class="sr01_dtl text-center">
+                                <i class="flaticon-075-user-3"></i>
+                                <h3><a href="capital_service.html">{{title}}</a></h3>
+                                <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="capital_service.html">Leer
+                                    Más</a></div>
+                            </div>
                         </div>
-                        <div class="sr01_dtl text-center">
-                            <i class="flaticon-205-money-2"></i>
-                            <h3><a href="finance_service.html">Finanzas, administración y planeación fiscal</a>
-                            </h3>
-                            <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="finance_service.html">Leer Más</a></div>
+                        <div class="item service_01" ng-controller="headhunting">
+                            <div class="sr01_thumb">
+                                <img src="{{image}}" alt="Talento">
+                            </div>
+                            <div class="sr01_dtl text-center">
+                                <i class="flaticon-095-magnifying-glass"></i>
+                                <h3>
+                                    <a href="headhunting_service.html">{{title}}
+                                    </a>
+                                </h3>
+                                <div class="learn_more_lnk_div"><a class="learn_more_lnk"
+                                                                   href="headhunting_service.html">Leer Más</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item service_01">
-                        <div class="sr01_thumb">
-                            <img src="images/services/human.jpeg" alt="Capital Humano"/>
+                        <div class="item service_01" ng-controller="control">
+                            <div class="sr01_thumb">
+                                <img src="{{image}}"  alt="COSO">
+                            </div>
+                            <div class="sr01_dtl text-center">
+                                <i class="flaticon-137-money-bag-3"></i>
+                                <h3><a href="coso_service.html">{{title}}</a></h3>
+                                <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="coso_service.html">Leer
+                                    Más</a></div>
+                            </div>
                         </div>
-                        <div class="sr01_dtl text-center">
-                            <i class="flaticon-075-user-3"></i>
-                            <h3><a href="capital_service.html">Capital humano y desarrollo organizacional</a></h3>
-                            <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="capital_service.html">Leer Más</a></div>
+                        <div class="item service_01" ng-controller="government">
+                            <div class="sr01_thumb">
+                                <img src="{{image}}" alt="Consejero">
+                            </div>
+                            <div class="sr01_dtl text-center">
+                                <i class="flaticon-127-profits-4"></i>
+                                <h3><a href="coorporate_service.html">{{title}}</a></h3>
+                                <div class="learn_more_lnk_div"><a class="learn_more_lnk"
+                                                                   href="coorporate_service.html">Leer Más</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item service_01">
-                        <div class="sr01_thumb">
-                            <img src="images/services/headhuntinh.jpeg" alt="Talento">
-                        </div>
-                        <div class="sr01_dtl text-center">
-                            <i class="flaticon-095-magnifying-glass"></i>
-                            <h3>
-                                <a href="headhunting_service.html">Atracción de talento (Headhunting).
-                                </a>
-                            </h3>
-                            <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="headhunting_service.html">Leer Más</a></div>
-                        </div>
-                    </div>
-                    <div class="item service_01">
-                        <div class="sr01_thumb">
-                            <img src="images/services/control.jpeg" alt="COSO">
-                        </div>
-                        <div class="sr01_dtl text-center">
-                            <i class="flaticon-137-money-bag-3"></i>
-                            <h3><a href="coso_service.html">Control interno, método COSO.</a></h3>
-                            <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="coso_service.html">Leer Más</a></div>
-                        </div>
-                    </div>
-                    <div class="item service_01">
-                        <div class="sr01_thumb">
-                            <img src="images/services/gobierno.jpeg" alt="Consejero">
-                        </div>
-                        <div class="sr01_dtl text-center">
-                            <i class="flaticon-127-profits-4"></i>
-                            <h3><a href="coorporate_service.html">Consejero independiente
-                                y gobierno corporativo</a></h3>
-                            <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="coorporate_service.html">Leer Más</a></div>
-                        </div>
-                    </div>
-                    <div class="item service_01">
-                        <div class="sr01_thumb">
-                            <img src="images/services/identidad.jpeg" alt="Promocionales">
-                        </div>
-                        <div class="sr01_dtl text-center">
-                            <i class="flaticon-122-idea-3"></i>
-                            <h3><a href="identity_service.html">Identidad corporativa, impresos
-                                y promocionales</a></h3>
-                            <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="identity_service.html">Leer Más</a></div>
+                        <div class="item service_01" ng-controller="identity">
+                            <div class="sr01_thumb">
+                                <img  src="{{image}}"  alt="Promocionales">
+                            </div>
+                            <div class="sr01_dtl text-center">
+                                <i class="flaticon-122-idea-3"></i>
+                                <h3><a href="identity_service.html">{{title}}</a></h3>
+                                <div class="learn_more_lnk_div"><a class="learn_more_lnk" href="identity_service.html">Leer
+                                    Más</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 <!-- Service Section End -->
 
@@ -755,7 +757,7 @@
                 &emsp;
                 <a class="footer" href="tel:3312886652">(33) 12 88 66 52</a>
                 </br>
-                <a class="footer"  href="privacy.html">
+                <a class="footer" href="privacy.html">
                     Conoce Nuestro Aviso de Privacidad
                 </a>
             </div>
@@ -810,6 +812,10 @@
 <link rel="stylesheet" href="js/floating-wpp.min.css">
 <script src="js/query.serialize-object.min.js"></script>
 <script type="text/javascript" src="js/services.js"></script>
+
+<script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
+<script src="blog/app.js"></script>
+
 
 <!-- Netlify Config-->
 <script>
