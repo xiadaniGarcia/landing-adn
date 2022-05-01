@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en" ng-app="myMod" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <head>
         <title>Dimensión 360</title>
         <meta charset="UTF-8">
@@ -168,97 +168,91 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <div class="service_01">
+                        <div class="service_01" ng-controller="operation">
                             <div class="sr01_thumb">
-                                <img src="images/services/operation.jpeg" />
+                                <img src="{{image}}" />
                             </div>
                             <div class="sr01_dtl text-center">
                                 <i class="flaticon-092-invoice-3"></i>
-                                <h5>Operación y comercialización </br> </br></h5>
+                                <h5>{{title}}</br> </br></h5>
                                 <a class="learn_more_lnk" href="operation_service.html">Leer Más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="service_01">
+                        <div class="service_01" ng-controller="finance">
                             <div class="sr01_thumb">
-                                <img src="images/services/finance.jpeg"/>
+                                <img src="{{image}}"/>
                             </div>
                             <div class="sr01_dtl text-center">
                                 <i class="flaticon-205-money-2"></i>
-                                <h5>Finanzas, administración </br>y planeación fiscal</h5>
-                              
+                                <h5>{{title}}</h5>
+
                                 <a class="learn_more_lnk" href="finance_service.html">Leer Más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="service_01">
+                        <div class="service_01" ng-controller="capital">
                             <div class="sr01_thumb">
-                                <img src="images/services/human.jpeg"/>
+                                <img  src="{{image}}"/>
                             </div>
                             <div class="sr01_dtl text-center">
                                 <i class="flaticon-075-user-3"></i>
-                                <h5>Capital humano y desarrollo
-                                    </br>organizacional</h5>
-                              
+                                <h5>{{title}}</h5>
+
                                 <a class="learn_more_lnk" href="capital_service.html">Leer Más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="service_01">
+                        <div class="service_01" ng-controller="headhunting">
                             <div class="sr01_thumb">
-                                <img src="images/services/headhuntinh.jpeg" alt="Mutual Funds"/>
+                                <img src="{{image}}"  alt="Mutual Funds"/>
                             </div>
                             <div class="sr01_dtl text-center">
                                 <i class="flaticon-095-magnifying-glass"></i>
-                                <h6>Atracción de talento (Headhunting),
+                                <h5>{{title}}</h5>
 
-                                    </br> evaluación de candidatos, Assessment Center.</h6>
-                              
                                 <a class="learn_more_lnk" href="headhunting_service.html">Leer Más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="service_01">
+                        <div class="service_01" ng-controller="control">
                             <div class="sr01_thumb">
-                                <img src="images/services/control.jpeg" alt="Mutual Funds"/>
+                                <img src="{{image}}" alt="Mutual Funds"/>
                             </div>
                             <div class="sr01_dtl text-center">
                                 <i class="flaticon-137-money-bag-3"></i>
-                                <h5>Control interno, procesos,
-                                    </br>medición del riesgo y método </br> COSO.</h5>
-                              
+                                <h5>{{title}}</h5>
+
                                 <a class="learn_more_lnk" href="coso_service.html">Leer Más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="service_01">
+                        <div class="service_01" ng-controller="government">
                             <div class="sr01_thumb">
-                                <img src="images/services/gobierno.jpeg" alt="Mutual Funds"/>
+                                <img src="{{image}}" alt="Mutual Funds"/>
                             </div>
                             <div class="sr01_dtl text-center">
                                 <i class="flaticon-127-profits-4"></i>
-                                <h5>Consejero independiente
-                                    </br>y gobierno corporativo</h5>
-                              
+                                <h5>{{title}}</h5>
+
                                 <a class="learn_more_lnk" href="coorporate_service.html">Leer Más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="service_01">
+                        <div class="service_01" ng-controller="identity">
                             <div class="sr01_thumb">
-                                <img src="images/services/identidad.jpeg" alt="Mutual Funds"/>
+                                <img src="{{image}}" alt="Mutual Funds"/>
                             </div>
                             <div class="sr01_dtl text-center">
                                 <i class="flaticon-122-idea-3"></i>
-                                <h6>Identidad corporativa, impresos
-                                    </br>y promocionales</h6>
-                              
+                                <h6>{{title}}</h6>
+
                                 <a class="learn_more_lnk" href="identity_service.html">Leer Más</a>
                             </div>
                         </div>
@@ -332,6 +326,9 @@
         <script type="text/javascript" src="js/floating-wpp.min.js"></script>
         <link rel="stylesheet" href="js/floating-wpp.min.css">
         <script type="text/javascript" src="js/services.js"></script>
+
+        <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
+        <script src="blog/app.js"></script>
 
     </body>
 </html>
